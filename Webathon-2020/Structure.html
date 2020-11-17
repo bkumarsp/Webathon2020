@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Them</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <noscript>Please enable JavaScript in your browser to play this game.</noscript>
+    <header>
+        <h1 id="Heading">Match the Cards</h1>
+    </header>
+    <strong id="score">Score: <span id='scoreText'>0</span></strong>
+
+    <hr>
+
+    <article>
+        <p>
+            <strong id="time">Timer: <span id="Hour">0</span>:<span id="Minute">0</span>:<span id="Seconds">0</span> </strong>
+        </p>
+        <p>
+            <label for="numberOfCards"><span>Choose Cards: </span></label>
+            <select name="cardCount" id="numberOfCards">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            <button onclick="createGame()">Play</button>
+        </p>
+        <div id="Layout"></div>
+        <button onclick="gameOver()">Finish</button>
+        <button onclick="gameReset()">Reset</button>
+    </article>
+
+
+    <footer>
+        <p>Created by <strong>Bharath</strong></p>
+        <p>For Kids of Age-Group: 8-12 years</p>
+    </footer>
+    <div class="scripts">
+        <script src="scripts/generateMatchCards.js"></script>
+        <script src="scripts/clearDeck.js"></script>
+        <script src="scripts/mainGamePlay.js"></script>
+        <script src="scripts/Scores.js"></script>
+        <script src="scripts/gameTimer.js"></script>
+        <script src="scripts/finishGame.js"></script>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </div>
+
+</body>
+
+</html>
